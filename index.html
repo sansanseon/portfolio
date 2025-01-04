@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서비스 기획자 포트폴리오</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .project-card {
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 1rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #4B5563;
+        }
+        .stat-card {
+            border-radius: 8px;
+            padding: 1rem;
+            background-color: #F3F4F6;
+            transition: all 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- 헤더 섹션 -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-4xl mx-auto py-8 px-4">
+            <h1 class="text-4xl font-bold mb-4">글로벌 서비스 기획자 포트폴리오</h1>
+            <p class="text-lg text-gray-600 mb-4">
+                4년차 서비스 기획자로서, 일본 웹툰 플랫폼의 메인 기획자를 맡아 데이터 기반의 의사결정과 현지화 전략을 통해 매출 250% 성장을 이끌었습니다.
+            </p>
+            <div class="flex gap-4 text-sm text-gray-500">
+                <span>📧 sansanseon@gmail.com</span>
+                <span>📱 010-6633-5657</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-4">
+        <!-- 핵심 역량 섹션 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6">핵심 역량</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="stat-card">
+                    <h3 class="font-bold mb-2">데이터 분석을 통한 서비스 기획/개선</h3>
+                    <p class="text-gray-600">사용자 중심의 UX 설계 능력</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="font-bold mb-2">결제 시스템 기획</h3>
+                    <p class="text-gray-600">대여권/정기결제 등 결제 시스템 기획 및 운영</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="font-bold mb-2">일본 시장 전문성</h3>
+                    <p class="text-gray-600">서비스 현지화 및 일본 업체와의 협업 경험</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="font-bold mb-2">프로젝트 관리</h3>
+                    <p class="text-gray-600">서비스 리뉴얼 PM 경험</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 프로젝트 섹션 -->
+        <section>
+            <h2 class="text-2xl font-bold mb-6">주요 프로젝트</h2>
+            
+            <!-- 벨툰 서비스 리뉴얼 프로젝트 -->
+            <div class="project-card bg-white p-8 mb-8">
+                <h3 class="text-2xl font-bold mb-4">벨툰 서비스 리뉴얼 프로젝트</h3>
+                <div class="flex gap-4 text-sm text-gray-600 mb-6">
+                    <span>2024.01 - 2024.06</span>
+                    <span>기여도 90%</span>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="font-bold mb-2">프로젝트 배경</h4>
+                    <ul class="list-disc ml-4 space-y-2 text-gray-700">
+                        <li>일본 현지 웹툰 서비스 트렌드와 맞지 않는 UI/UX</li>
+                        <li>제한적인 콘텐츠 노출로 인한 사용자 경험 저하</li>
+                        <li>직관적이지 않은 메뉴 구조</li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="font-bold mb-2">핵심 의사결정</h4>
+                    <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                        <h5 class="font-medium mb-2">성인 작품 노출 기준 변경</h5>
+                        <p class="text-gray-700">매출 상위 작품의 90% 이상이 성인작품임에도 성인인증 전 확인 불가 문제 해결을 위해 비성인용 썸네일 도입</p>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="font-bold mb-2">주요 성과</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="font-bold text-xl mb-1">250%</p>
+                            <p class="text-sm text-gray-600">매출 증대</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="font-bold text-xl mb-1">30%</p>
+                            <p class="text-sm text-gray-600">인기작품 열람률 향상</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 정기결제/스마트결제 프로젝트 -->
+            <div class="project-card bg-white p-8 mb-8">
+                <h3 class="text-2xl font-bold mb-4">정기결제/스마트결제 도입</h3>
+                <div class="flex gap-4 text-sm text-gray-600 mb-6">
+                    <span>2024.11 - 2025.01</span>
+                    <span>기여도 100%</span>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="font-bold mb-2">프로젝트 배경</h4>
+                    <p class="text-gray-700">안정적인 수익 창출을 위한 자동결제 시스템 도입 필요성</p>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="font-bold mb-2">주요 역할</h4>
+                    <ul class="list-disc ml-4 space-y-2 text-gray-700">
+                        <li>정기결제/스마트결제 플로우 설계</li>
+                        <li>결제 실패, 취소 등 예외상황 대응 프로세스 구축</li>
+                        <li>운영/CS 정책 수립</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 채팅 시스템 개선 프로젝트 -->
+            <div class="project-card bg-white p-8">
+                <h3 class="text-2xl font-bold mb-4">라우드소싱 채팅 기능 개선</h3>
+                <div class="flex gap-4 text-sm text-gray-600 mb-6">
+                    <span>2021.08 - 2021.10</span>
+                    <span>기여도 80%</span>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="font-bold mb-2">핵심 개선사항</h4>
+                    <ul class="list-disc ml-4 space-y-2 text-gray-700">
+                        <li>다중 채팅 시스템 도입으로 동시 의뢰 가능화</li>
+                        <li>의뢰 진행 상태 표시 기능 추가</li>
+                        <li>상태별 알림 시스템 구축</li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="font-bold mb-2">성과</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="font-bold text-xl mb-1">50%</p>
+                            <p class="text-sm text-gray-600">채팅 관련 VOC 감소</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="font-bold text-xl mb-1">30%</p>
+                            <p class="text-sm text-gray-600">외부 거래 이탈 감소</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 섹션 -->
+    <footer class="bg-gray-100 mt-12">
+        <div class="max-w-4xl mx-auto py-8 px-4">
+            <h2 class="text-xl font-bold mb-4">Tools & Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold mb-2">서비스 기획</h3>
+                    <p class="text-sm text-gray-600">FIGMA, ADOBE XD, WHIMSICAL, MIRO</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">협업</h3>
+                    <p class="text-sm text-gray-600">JIRA, SLACK, NOTION, Backlog</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">데이터 분석</h3>
+                    <p class="text-sm text-gray-600">Tableau, Hotjar, GA, SQL</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">Language</h3>
+                    <p class="text-sm text-gray-600">JLPT N1, OPIC AL, TOEIC 940</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
